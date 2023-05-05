@@ -1,15 +1,19 @@
-#get
-obtener los datos, hacer la solicitud aparecera un arreglo vacio ya que para tener informacion debemos hacer los posts primero
+# get
+Antes de poder hacer uso de este metodo tendremos que realizar un post con algunos datos, de lo contrario retornara un arreglo vacio
 
-#post
-en este apartado ingresaremos un:
-    "id" : 
-    "titulo": ""
-    "mensaje" : ""
+# post
+para hacer uso de este metodo ingresaremos un un arreglo con los siguientes parametros:
+{
+     "id":1
+    "titulo": "farandula"
+    "mensaje" : "Valió la pena la tardanza de Rihanna en la alfombra de Met Gala"   
+}
+  
 
-#put
-en este metodo solo se puede obtener el mensaje por su id ingresando http://localhost:3000/noticia/8 pondremos la url lugo una pleca  mas el id del mensage a actualizar
+
+# put
+Este metodo no es del todo funcional solo se podremos obtener el mensaje por su id ingresando en la barra de busqueda de postman la siguiente ruta http://localhost:3000/noticia  luego agregamos  lo siguente "/1"esto nos ayudara a obtener la noticia co dicho id
 
 
-#delete
-en este metodo funciona totalmente ingresando http://localhost:3000/noticia/8 pondremos la ruta del servidor lugo una pleca  mas el id del mensage a borrar
+# delete
+Este metodo ingresaremos en la barra de busqueda de postman la siguiente ruta http://localhost:3000/noticia  luego agregamos  lo siguente "/1" esto nos ayudara a obtener la noticia con dicho id y proceder a elimunarla
